@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8">
   <style>
+
     #navbar {
         margin: 0;
         padding: 0;
@@ -10,7 +11,9 @@
         border-radius: 20px 5px;
         text-align: center;
       }
+
       #navbar li { display: inline;}
+
       #navbar a {
         color: black;
         padding: 5px 10px;
@@ -19,10 +22,12 @@
         display: inline-block;
         width: 100px;
       }
+
       #navbar a:hover {
         border-radius: 20px 5px;
         background-color: #808080;
       }
+
       .iksweb{
         display: inline-block;
         cursor: pointer; 
@@ -38,8 +43,131 @@
     color:#ffffff;
     border:2px solid #354251;
     transition: all 0.2s ease;}
-    .nn:
+
+    .nn{
     margin-top:50px;}
+
+.menu.effect-02 ul li a:hover {
+    background: rgba(136,0,68,.2);
+    border-radius: 25px;
+  }
+
+  .menu.effect-03 ul li a {
+    position: relative;
+  }
+
+  .menu.effect-03 ul li a:before {
+    color: #fa0;
+    content: '[';
+    display: block;
+    font-size: 1.5em;
+    left: 30px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .menu.effect-03 ul li a:after {
+    color: #fa0;
+    content: ']';
+    display: block;
+    font-size: 1.5em;
+    opacity: 0;
+    position: absolute;
+    right: 30px;
+    top: 0;
+  }
+
+  .menu.effect-03 ul li a:hover:before {
+    left: 15px;
+    opacity: 1;
+  }
+
+  .menu.effect-03 ul li a:hover:after {
+    opacity: 1;
+    right: 15px;
+  } 
+
+  .menu.effect-03 ul li a:hover {
+    background: trasnparent;
+  }
+
+body {
+  background-attachment: fixed;
+  color: #555;
+  font-family: , Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.page_title {
+  color: #0af;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  font-weight: 300;
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 0 1px 1px rgba(0,0,0,.1);
+  text-transform: uppercase;
+}
+
+.menu,
+.menu .menu_title,
+.menu ul li a,
+.menu ul li a:after,
+.menu ul li a:before {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.menu {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-top: 1px solid #fff;
+  margin: 0;
+  padding: 60px 0;
+}
+
+.menu:hover {
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.menu .menu_title {
+  color: #ccc;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+.menu:hover .menu_title {
+  color: #0af;
+  text-shadow: 0 1px 1px rgba(0,0,0,.1);  
+}
+
+.menu ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  color: #555;
+  display: block;
+  line-height: 50px;
+  padding: 0 30px;
+  text-decoration: none;
+}
+
   </style>
 </head>
 <body>
@@ -57,10 +185,14 @@
   <h1 align="center"> Доставка производится ТК <a href="https://www.pochta.ru/">"АО Почта России"</a>, либо выдача в нашем офисе.</h1>
   <h2 align="center">Наш офис в Ивантеевке:</h2>
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61af44238bdad34e4cba83062a4688ef9131cdba006247198c900ad21fa398e5&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-  <h2 align="center"> Поддержать проект:</h2>
-  <h2 align="center"><img width = "100" src="5677.jpg"</h2>
-  <h3 align="center"><a href = "https://www.tinkoff.ru/cf/92bJaqru6gX">Тинькофф</a></h3>
-  <h3 align="center"><a href = "razrabotka.html">Биткоин кошелек</a></h3>
+  <div class="menu effect-03">
+  <h3 class="menu_title">Поддержать проект:</h3>
+  <ul>
+    <li><a href="https://www.tinkoff.ru/cf/92bJaqru6gX">Тинькофф</a></li>
+    <li><a href="razrabotka.html">Биткоин кошелек</a></li>
+  </ul>
+</div>
+  <h2 align="center"><img width = "300" src="qr.svg"></h2>
   <hr>
   <p align="center">&#169 Все права защищены. 2020-2023</p>
 </body>
