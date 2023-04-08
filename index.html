@@ -33,16 +33,39 @@
       	background:#ffff0;
       	border-radius:0px;
       	border:2px solid #354251;}
+      .vertical-menu {
+      			margin-top: 40px;
+            width: 240px;
+            display:inline-block;
+        }
+  
+        .vertical-menu a {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+  
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+  
+        .vertical-menu a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
 
 	.iksweb:hover{background:#354251;
 		color:#ffffff;
 		border:2px solid #354251;
 		transition: all 0.2s ease;}
-		.nn:
+		.nn{
 		margin-top:50px;}
+	
   </style>
 </head>
-<body>
+<body style="height:635px;">
 
 	  <ul id="navbar">
       <li><a href="index.html">Главная</a></li>
@@ -52,7 +75,12 @@
       <li><a href="dostavka.html">Доставка</a></li>
 	  </ul>
 <hr>	
-	<table border="0" align="center" rules="cols"  bgcolor="white">
+<div class="vertical-menu" align="center">
+        <a href="razrabotka.html">Все</a>
+        <a href="razrabotka.html">Запчасти</a>
+        <a href="razrabotka.html">Модификации</a>
+    </div>
+	<table border="0" align="right" rules="cols"  bgcolor="white">
 		<tr>
 			<td><img width = "128" height="96" src="900.jpg"></td>
 			<td><img width = "128" height="96" src="val.jpg"></td>
@@ -62,7 +90,6 @@
 			<td><img width = "128" height="96" src="remni.jpg"></td>
 			<td><img width = "128" height="96" src="screw.png"></td>
 			<td><img width = "128" height="96" src="encoder.jpg"></td>
-
 		</tr>
 		<tr>
 		<td>Мод 900 градусов<br>Logitech MOMO</td>
@@ -95,7 +122,9 @@
 			<td><a class="iksweb" href="razrabotka.html"   title="Не будь лохом, покупай">В корзину</a></td>
 		</tr>
 	</table>
-	<hr margin-bottom:10px>
+	<div style="bottom: 10px; position: absolute; width:99%;">
+	<hr>
 	<p align="center">&#169 Все права защищены. 2020-2023</p>
+</div>
 </body>
 </html>
