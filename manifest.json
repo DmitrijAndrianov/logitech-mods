@@ -1,0 +1,15 @@
+{
+  "name": "Logitech-Mods",
+  "short_name": "Logi-Mods",
+  "lang": "ru",
+  "start_url": "https://dmitrijandrianov.github.io/logitech-mods/index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "homescreen",
+      "sizes": "3104x2487",
+      "type": "png"
+    }
+  ]
+}
