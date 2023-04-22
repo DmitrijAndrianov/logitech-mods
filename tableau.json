@@ -4,6 +4,6 @@
    "layout": {
        "logo": "https://mihailgok.ru/tableau.png",
        "color": "#0035FF",
-       "show_title": all
+       "show_title": none
    }
 }
