@@ -1,9 +1,10 @@
 {
-   "version": "1.2",
-   "api_version": 3,
-   "layout": {
-       "logo": "https://mihailgok.ru/tableau.png",
-       "color": "#0035FF",
-       "show_title": none
-   }
+"version": "1.0",
+"api_version": 1,
+"layout":
+ {
+ "logo": "https://mojwp.ru/wp-content/uploads/banners/mojwp-yandex.png",
+ "color": "#0084C8",
+ "show_title": false
+ }
 }
