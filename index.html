@@ -1,6 +1,6 @@
 <html>
 <head>
-	<link rel="icon" href="kv-2-logo.jpg" type="image/svg+xml">
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
 	<meta name="yandex-tableau-widget" content="/favicon.svg, color=#FF2A75" />
 
 	<meta charset="utf-8">
@@ -8,8 +8,7 @@
 
 		body {
   background-attachment: fixed;
-  background-image: url(fon.jpg);
-  color: #black;
+  color: #555;
   font-family: , Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -33,7 +32,7 @@
       #navbar li { display: inline;}
 
       #navbar a {
-        color: white;
+        color: black;
         padding: 5px 10px;
         text-decoration: none;
         font-weight: bold;
@@ -56,7 +55,31 @@
       	background:#ffff0;
       	border-radius:0px;
       	border:2px solid #354251;}
-      	.iksweb:hover{background:#354251;
+
+      .vertical-menu {
+      		
+            width: 150px;
+            \
+            right: 0px;
+        }
+  
+        .vertical-menu a {
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+  
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+  
+        .vertical-menu a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+	.iksweb:hover{background:#354251;
 		color:#ffffff;
 		border:2px solid #354251;
 		transition: all 0.2s ease;}
@@ -67,12 +90,19 @@
 </head>
 <body style="height:635px;">
 	  <ul id="navbar">
-      <li style="color:#ffffff"><a href="index.html">Главная</a></listyle>
-      <img id="nn" width="200" height="125" margin-top="100px" src="KV2-TF.jpg">
-      <li style="color:#ffffff"><a href="onas.html">О нас</a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="korzina.html">Корзина</a></li>
+      <img id="nn" width="170" height="80" src="svg.svg">
+      <li><a href="onas.html">О нас</a></li>
+      <li><a href="dostavka.html">Доставка</a></li>
 	  </ul>
-<hr>
-	<table border="0" align="center" rules="cols"  bgcolor="white">
+<hr>	
+<div class="vertical-menu" align="center" style="position: absolute; margin-left:44%;">
+        <a href="razrabotka.html">Все</a>
+        <a href="razrabotka.html">Запчасти</a>
+        <a href="razrabotka.html">Модификации</a>
+    </div>
+	<table border="0" align="right" rules="cols"  bgcolor="white" style="position: absolute; margin-top:150px; ">
 		<tr>
 			<td><img width = "128" height="96" src="900.jpg"></td>
 			<td><img width = "128" height="96" src="val.jpg"></td>
@@ -96,7 +126,31 @@
 		<td>Энкодер неоригинал<br>Logitech MOMO</td>
 		<td>Главный вал<br>неоригинал<br>Logitech MOMO</td>
 		<td>Заглушки КПП<br>Logitech MOMO</td>
-
+		</tr>
+		<tr>
+		<td>500 рублей</td>
+		<td>700 рублей</td>
+		<td>800 рублей</td>
+		<td>200 рублей</td>
+		<td>800 рублей</td>
+		<td>600 рублей</td>
+		<td>200 рублей</td>
+		<td>300 рублей</td>
+		<td>1000 рублей</td>
+		<td>150 рублей</td>
+		</tr>
+		<tr>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+   			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+   			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+			<td><a class="iksweb" href="korzina.html"   title="Не будь лохом, покупай">В корзину</a></td>
+		</tr>
 	</table>
 	<div style="bottom: 10px; position: absolute; width:99%;">
 	<hr>
