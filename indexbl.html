@@ -5,7 +5,12 @@
 
 	<meta charset="utf-8">
 	<style>
-
+ hr {
+    border: none;
+    color: #525552;
+    background-color: #525552 ;
+    height: 2px;
+   }
 		body {
   background-attachment: fixed;
   background-color: #121212;
@@ -23,6 +28,8 @@
   bkg-color: #121212;
   anchor-color: #809fff;
 }
+.filter-green{
+    filter:invert(30%) sepia(0%) saturate(6257%) hue-rotate(332deg) brightness(105%) contrast(89%);}
 
 		#navbar {
         margin: 0;
@@ -36,7 +43,7 @@
       #navbar li { display: inline;}
 
       #navbar a {
-        color: black;
+        color: #354251;
         padding: 5px 10px;
         text-decoration: none;
         font-weight: bold;
@@ -46,7 +53,8 @@
 
       #navbar a:hover {
         border-radius: 20px 5px;
-        background-color: #b3b3b3;
+        color:white;
+        background-color: #354251;
       }
 
       .iksweb{
@@ -68,18 +76,18 @@
         }
   
         .vertical-menu a {
-            color: black;
+            color: #354251;
             display: block;
             padding: 12px;
             text-decoration: none;
         }
   
         .vertical-menu a:hover {
-            background-color: #ccc;
+            background-color: #525552;
         }
   
         .vertical-menu a.active {
-            background-color: #04AA6D;
+            background-color: #525552;
             color: white;
         }
 
@@ -89,14 +97,14 @@
 		transition: all 0.2s ease;}
 		.nn{
 		margin-top:50px;}
-	
+		
   </style>
 </head>
 <body style="height:635px;">
 	  <ul id="navbar">
       <li><a href="index.html">Главная</a></li>
       <li><a href="korzina.html">Корзина</a></li>
-      <img id="nn" width="170" height="80" src="svg.svg">
+      <img class="filter-green" id="nn" width="170" height="80" src="svg.svg">
       <li><a href="onas.html">О нас</a></li>
       <li><a href="dostavka.html">Доставка</a></li>
 	  </ul>
@@ -126,7 +134,6 @@
 		<td>Комплект ремней<br>Logitech MOMO</td>
 		<td>Винт струбцины<br>неоригинал<br>Logitech MOMO</td>
 		<td>Энкодер<br>неоригинал<br>Logitech MOMO</td>
-		
 		</tr>
 		<tr>
 		<td>500 рублей</td>
