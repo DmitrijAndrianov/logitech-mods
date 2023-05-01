@@ -5,7 +5,12 @@
 
 	<meta charset="utf-8">
 	<style>
-
+ hr {
+    border: none;
+    color: #525552;
+    background-color: #525552 ;
+    height: 2px;
+   }
 		body {
   background-attachment: fixed;
   background-color: white;
@@ -23,6 +28,8 @@
   bkg-color: #121212;
   anchor-color: #809fff;
 }
+.filter-green{
+    filter:invert(30%) sepia(0%) saturate(6257%) hue-rotate(332deg) brightness(105%) contrast(89%);}
 
 		#navbar {
         margin: 0;
@@ -36,7 +43,7 @@
       #navbar li { display: inline;}
 
       #navbar a {
-        color: black;
+        color: #525552;
         padding: 5px 10px;
         text-decoration: none;
         font-weight: bold;
@@ -46,49 +53,57 @@
 
       #navbar a:hover {
         border-radius: 20px 5px;
-        background-color: #b3b3b3;
+        color:white;
+        background-color: #525552;
       }
-
+      #navbar:hover {
+      	transition: all 0.2s ease;
+      }
       .iksweb{
       	display: inline-block;
       	cursor: pointer; 
       	font-size:14px;
       	text-decoration:none;
       	padding:10px 20px; 
-      	color:#354251;
+      	color:#525552;
       	background:#ffff0;
       	border-radius:0px;
-      	border:2px solid #354251;}
+      	border:2px solid #525552;}
 
       .vertical-menu {
-      		
+      		color:#525552;
             width: 150px;
             \
             right: 0px;
         }
   
         .vertical-menu a {
-            color: black;
+            color: #525552;
             display: block;
             padding: 12px;
             text-decoration: none;
         }
   
         .vertical-menu a:hover {
-            background-color: #ccc;
+        	color:white;
+            background-color: #525552;
+            transition: all 0.2s ease;
         }
   
-        .vertical-menu a.active {
-            background-color: #04AA6D;
+        .vertical-menu a:active {
+            background-color: #525552;
             color: white;
         }
+        .vertical-menu:hover{
+        	transition: all 0.2s ease;
+        }
 
-	.iksweb:hover{background:#354251;
+	.iksweb:hover{
+		background:#525552;
 		color:#ffffff;
-		border:2px solid #354251;
-		transition: all 0.2s ease;}
-		.nn{
-		margin-top:50px;}
+		border:2px solid #525552;
+		transition: all 0.2s ease;
+	}
 	
   </style>
 </head>
@@ -96,7 +111,7 @@
 	  <ul id="navbar">
       <li><a href="index.html">Главная</a></li>
       <li><a href="korzina.html">Корзина</a></li>
-      <img id="nn" width="170" height="80" src="svg.svg">
+      <img class="filter-green" id="nn" width="170" height="80" src="svg.svg">
       <li><a href="onas.html">О нас</a></li>
       <li><a href="dostavka.html">Доставка</a></li>
 	  </ul>
