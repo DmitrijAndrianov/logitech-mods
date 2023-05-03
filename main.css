@@ -1,0 +1,118 @@
+
+.filter-green{
+filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) contrast(85%);}
+ body {
+  background-attachment: fixed;
+  color: #555;
+  font-family: , Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+    #navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border: 0px;
+        border-radius: 20px 5px;
+        text-align: center;
+      }
+
+      #navbar li { display: inline;}
+
+      #navbar a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+      }
+
+      #navbar a:hover {
+        border-radius: 20px 5px;
+        background-color: #354251;
+      }
+      #navbar:hover{
+        transition: all 0.2s ease;
+      } 
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #color-mode:checked ~ * {
+    --bg: white;
+    --text: black;
+  }
+}
+
+.color-scheme-wrapper {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode-hide {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .light-mode-hide {
+    display: initial;
+  }
+}
+
+}
+
+html,
+body,
+div {
+  max-width: none;
+}
+input[type="checkbox"] {
+  opacity: 0.00001;
+  position: absolute;
+}
+
+label {
+  cursor: pointer;
+  position: absolute;
+  background: var(--text);
+  color: var(--bg);
+  padding: 1rem;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  user-select: none;
+}
+
+
+label:after {
+  content: "✔\FE0E";
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-left: 1rem;
+  border: solid 2px var(--bg);
+  text-align: center;
+  border-radius: 4px;
+  
+}
+
+a {
+  color: inherit;
+    text-decoration: none;
+  padding: 0.1em 0.2em;
+}
