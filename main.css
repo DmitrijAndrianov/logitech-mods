@@ -33,7 +33,7 @@ filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) 
 
  body {
   background-attachment: fixed;
-  font-family: Geneva,sans-serif;
+  
   color: #5f5f6e;
   font-size: 18px;
   font-weight: 300;
