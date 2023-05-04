@@ -1,21 +1,27 @@
-
 .filter-green{
 filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) contrast(85%);}
- body {
-  background-attachment: fixed;
-  color: #555;
-  font-family: , Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 140%;
-  margin: 0;
-  height: 100%;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-}
-    #navbar {
-        margin: 0;
+
+
+      #navbar a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+        margin-top:0 auto;
+      }
+
+      #navbar a:hover {
+        color:white;
+        border-radius: 20px 5px;
+        background-color: #5f5f6e;
+      }
+      #navbar:hover{
+        transition: all 0.2s ease;
+      } 
+      #navbar {
+        margin: 0 auto;
+        vertical-align: middle;
         padding: 0;
         list-style-type: none;
         border: 0px;
@@ -25,24 +31,28 @@ filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) 
 
       #navbar li { display: inline;}
 
-      #navbar a {
-        padding: 5px 10px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 100px;
-      }
-
-      #navbar a:hover {
-        border-radius: 20px 5px;
-        background-color: #354251;
-      }
-      #navbar:hover{
-        transition: all 0.2s ease;
-      } 
+ body {
+  background-attachment: fixed;
+  font-family: Geneva,sans-serif;
+  color: #5f5f6e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+ hr {
+    border: none;
+    background-color:#5f5f6e;
+    height: 2px;
+   }
+    
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root  {
     --bg: #121212;
     --text: white;
   }
@@ -51,7 +61,7 @@ filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) 
 @media (prefers-color-scheme: dark) {
   #color-mode:checked ~ * {
     --bg: white;
-    --text: black;
+    --text: #5f5f6e;
   }
 }
 
