@@ -1,7 +1,6 @@
 .filter-green{
 filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) contrast(85%);}
 
-
       #navbar a {
         padding: 5px 10px;
         text-decoration: none;
@@ -33,7 +32,7 @@ filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) 
 
  body {
   background-attachment: fixed;
-  
+  font-family: Geneva,sans-serif;
   color: #5f5f6e;
   font-size: 18px;
   font-weight: 300;
@@ -86,7 +85,6 @@ filter: invert(38%) sepia(6%) saturate(896%) hue-rotate(201deg) brightness(92%) 
 }
 
 html,
-body,
 div {
   max-width: none;
 }
@@ -109,7 +107,6 @@ label {
   user-select: none;
 }
 
-
 label:after {
   content: "✔\FE0E";
   height: 1.2rem;
@@ -118,7 +115,6 @@ label:after {
   border: solid 2px var(--bg);
   text-align: center;
   border-radius: 4px;
-  
 }
 
 a {
@@ -126,3 +122,49 @@ a {
     text-decoration: none;
   padding: 0.1em 0.2em;
 }
+
+
+.vertical-menu {
+          color:#5f5f6e;
+            width: 150px;
+            \
+            right: 0px;
+        }
+  
+        .vertical-menu a {
+            color: #5f5f6e;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+  
+        .vertical-menu a:hover {
+          color:white;
+            background-color: #5f5f6e;
+            transition: all 0.2s ease;
+        }
+  
+        .vertical-menu a:active {
+            background-color: #5f5f6e;
+            color: white;
+        }
+        .vertical-menu:hover{
+          transition: all 0.2s ease;
+        }
+
+  .iksweb:hover{
+    background:#5f5f6e;
+    color:#ffffff;
+    border:2px solid #5f5f6e;
+    transition: all 0.2s ease;
+  }
+  .iksweb{
+        display: inline-block;
+        cursor: pointer; 
+        font-size:14px;
+        text-decoration:none;
+        padding:10px 20px; 
+        color:#5f5f6e;
+        background:#ffff0;
+        border-radius:0px;
+        border:2px solid #5f5f6e;}}

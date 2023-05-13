@@ -3,114 +3,19 @@
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
 	<meta name="yandex-tableau-widget" content="/favicon.svg, color=#FF2A75" />
 	<meta charset="utf-8">
-	<meta http-equiv="refresh" content="50; URL=indexbl.html">
-	<style>
- hr {
-    border: none;
-    color: #525552;
-    background-color: #525552 ;
-    height: 2px;
-   }
-		body {
-  background-attachment: fixed;
-  background-color: white;
-  color: #555;
-  font-family: , Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 140%;
-  margin: 0;
-  height: 100%;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  text-color: #eee;
-  bkg-color: #121212;
-  anchor-color: #809fff;
-}
-.filter-green{
-    filter:invert(30%) sepia(0%) saturate(6257%) hue-rotate(332deg) brightness(105%) contrast(89%);}
-
-		#navbar {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        border: 0px;
-        border-radius: 20px 5px;
-        text-align: center;
-      }
-
-      #navbar li { display: inline;}
-
-      #navbar a {
-        color: #525552;
-        padding: 5px 10px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 100px;
-      }
-
-      #navbar a:hover {
-        border-radius: 20px 5px;
-        color:white;
-        background-color: #525552;
-      }
-      #navbar:hover {
-      	transition: all 0.2s ease;
-      }
-      .iksweb{
-      	display: inline-block;
-      	cursor: pointer; 
-      	font-size:14px;
-      	text-decoration:none;
-      	padding:10px 20px; 
-      	color:#525552;
-      	background:#ffff0;
-      	border-radius:0px;
-      	border:2px solid #525552;}
-
-      .vertical-menu {
-      		color:#525552;
-            width: 150px;
-            \
-            right: 0px;
-        }
-  
-        .vertical-menu a {
-            color: #525552;
-            display: block;
-            padding: 12px;
-            text-decoration: none;
-        }
-  
-        .vertical-menu a:hover {
-        	color:white;
-            background-color: #525552;
-            transition: all 0.2s ease;
-        }
-  
-        .vertical-menu a:active {
-            background-color: #525552;
-            color: white;
-        }
-        .vertical-menu:hover{
-        	transition: all 0.2s ease;
-        }
-
-	.iksweb:hover{
-		background:#525552;
-		color:#ffffff;
-		border:2px solid #525552;
-		transition: all 0.2s ease;
-	}
-  </style>
+	<link href="main.css" rel="stylesheet" type="text/css">
 </head>
-<body style="height:635px;">
+<body>
+    <input id="color-mode" type="checkbox" name="color-mode">
+  <label for="color-mode">
+    <span class="dark-mode-hide">Dark Lord Mode</span>
+    <span class="light-mode-hide">Light Lord Mode</span>
+  </label>
+  <div class="color-scheme-wrapper">
 	  <ul id="navbar">
       <li><a href="index.html">Главная</a></li>
       <li><a href="korzina.html">Корзина</a></li>
-      <img class="filter-green" id="nn" width="170" height="80" src="svg.svg">
+      <img class="filter-green" width="170" height="80" src="svg.svg">
       <li><a href="onas.html">О нас</a></li>
       <li><a href="dostavka.html">Доставка</a></li>
 	  </ul>
@@ -244,9 +149,8 @@
 		</tr>
 	</table>
 	<hr>
-	<div style="margin-top: 0px; position: absolute;width: 100%;">
-	<hr>
 	<p align="center">&#169 Все права защищены. 2020-2023</p>
+</div>
 </div>
 </body>
 </html>
